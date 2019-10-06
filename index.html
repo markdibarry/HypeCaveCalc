@@ -1,0 +1,50 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+
+        <title>SMZ3 Hype Cave Calc</title>
+        <meta name="description" content="An SMZ3 Hypecave calculator">
+        <meta name="author" content="Mark DiBarry">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="css/styles.css">
+
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class="content-wrapper">
+                <h1>SMZ3 Hype Cave Calc</h1>
+                <div class="selection-container">
+                    <select id="item1" class="item-dropdown">
+                    </select>
+                    <select id="item2" class="item-dropdown">
+                    </select>
+                    <select id="item3" class="item-dropdown">
+                    </select>
+                    <select id="item4" class="item-dropdown">
+                    </select>
+                    <select id="item5" class="item-dropdown">
+                    </select>
+                </div>
+                <div class="results-container">
+                    <button type="button" id="resultsButton" class="results-button">Get Rating</button>
+                    <div id="scoreContainer">
+                        <p id="errorMessage" class="red-message">Please finish selecting items</p>
+
+                        <div id="scoreDisplayWrapper">
+                            <p>Your Hype Cave score:</p>
+                            <div id="scoreDisplayContainer">
+                                <p id="scoreDisplay"></p>
+                                <p id="scoreMessage"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/items.js"></script>
+        <script src="./js/scripts.js"></script>
+    </body>
+</html>

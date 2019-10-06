@@ -1,0 +1,136 @@
+html {
+    height: 100%;
+    width: auto;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+body, html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+p {
+    margin: 0;
+}
+
+.page-wrapper {
+    height: 100%;
+    width: 100%;
+    
+    .content-wrapper {
+        height: 100%;
+        width: 100%;
+        padding: 10px 10px 0 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.selection-container {
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5px 10px;
+    max-width: 350px;
+    width: 100%;
+
+    .item-dropdown {
+        max-width: 300px;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #aaa;
+        border-radius: 4px;
+        margin: 5px;
+        font-size: 15px;
+    }
+}
+
+.results-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+    .results-button {
+        padding: 10px;
+        border-radius: 4px;
+        background-color: #fff;
+        font-size: 15px;
+        border: 1px solid #bbb;
+        transition: background-color 0.2s;
+
+            &:hover {
+                background-color: #ccc;
+            }
+    }
+
+    #scoreContainer {
+        margin-top: 10px;
+
+        #scoreDisplayWrapper {
+            flex-direction: column;
+            align-items: center;
+
+            > p {
+                font-size: 17px;
+                margin-bottom: 10px;    
+            }
+
+            #scoreDisplayContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+    
+                #scoreDisplay {
+                    font-size: 20px;
+                    font-weight: 700;
+                }
+            }
+        }
+
+        #scoreDisplayWrapper, #errorMessage {
+            display: none;
+        }
+
+        #scoreDisplayContainer, #errorMessage {
+            font-size: 16px;
+            font-weight: 600;
+            border: 1px solid;
+            border-radius: 4px;
+            padding: 15px;
+        }
+    }
+}
+
+.green-message {
+    color: #144600;
+    border-color: #144600;
+    background-color: #deffde;
+}
+
+.yellow-message {
+    color: #802b00;
+    border-color: #802b00;
+    background-color: #fff2de;
+}
+
+.red-message {
+    color: #b00000;
+    border-color: #b00000;
+    background-color: #ffe0e0;
+}
