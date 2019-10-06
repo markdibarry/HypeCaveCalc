@@ -1,4 +1,4 @@
-// Always required: 10
+// Always required by logic: 10
 // Possibly required, and is QoL: 8-9
 // Possibly required, but not much help: 6-7
 // Not required but good QoL: 4-5
@@ -17,9 +17,19 @@ const smz3Items = [
         rating: 2
     },
     {
+        name: "Super Missile (First pack)",
+        amount: 16,
+        rating: 10
+    },
+    {
         name: "Super Missile",
         amount: 16,
         rating: 3
+    },
+    {
+        name: "Power Bomb (First pack)",
+        amount: 10,
+        rating: 10
     },
     {
         name: "Power Bomb",
@@ -104,17 +114,17 @@ const smz3Items = [
     {
         name: "Varia Suit",
         amount: 1,
-        rating: 9
+        rating: 10
     },
     {
         name: "Gravity Suit",
         amount: 1,
-        rating: 9
+        rating: 10
     },
     {
         name: "Charge Beam",
         amount: 1,
-        rating: 9
+        rating: 10
     },
     {
         name: "[ Zelda Items ]",
@@ -349,12 +359,12 @@ const smz3Items = [
     {
         name: "Hookshot",
         amount: 1,
-        rating: 9
+        rating: 10
     },
     {
         name: "Lamp",
         amount: 1,
-        rating: 8
+        rating: 10
     },
     {
         name: "Cane Of Somaria",
@@ -364,7 +374,7 @@ const smz3Items = [
     {
         name: "Bow",
         amount: 1,
-        rating: 9
+        rating: 10
     },
     {
         name: "Hammer",
